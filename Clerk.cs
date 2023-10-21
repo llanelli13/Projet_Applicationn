@@ -26,6 +26,9 @@ class Clerk {
             customer.address = Console.ReadLine();
             Console.WriteLine("What is your phone number?");
             customer.phone = Console.ReadLine();
+            AddCustomer(customer);
+            MakingOrder();
+            
         }
         else if (isFirstOrder.ToLower() == "n"){
             Console.WriteLine("What is your phone number ?");
@@ -34,7 +37,13 @@ class Clerk {
 
             if (DoesCustomerExist != null){
                 Console.WriteLine($"Welcome back, {DoesCustomerExist.firstname} {DoesCustomerExist.surname}");
-                Console.WriteLine($"Can you confirm that your address is {DoesCustomerExist.address} ? Y/N");
+                Console.WriteLine($"Can you confirm that your address is : {DoesCustomerExist.address} ? Y/N");
+                string addressCorrect = Console.ReadLine();
+                if (addressCorrect.ToLower()=="y"){
+                    MakingOrder();
+                }else if (addressCorrect.ToLower()=="n"){
+                    Console.WriteLine("Address is incorrect");
+                }
             }
             else {
                 Console.WriteLine("Customer not found, please enter your details");
@@ -45,6 +54,11 @@ class Clerk {
     }
 
     public void MakingOrder(){
+        Console.WriteLine("Je fais la commande");
+    }
 
+    public void AddCustomer(Customer customer){
+        customers.Add(customer);
+        Console.WriteLine("Customer ajouté");
     }
 }
