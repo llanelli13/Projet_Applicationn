@@ -16,6 +16,7 @@ class Clerk {
         Console.WriteLine("Welcome to our restaurant !");
         Console.Write("Is it your first order in our restaurant ? Y/N");
         string isFirstOrder = Console.ReadLine();
+        // Customer's first order
         if (isFirstOrder.ToLower() == "y"){
             Customer customer = new Customer();
             Console.WriteLine("What is your first name ?");
@@ -30,6 +31,7 @@ class Clerk {
             MakingOrder();
             
         }
+        // Customer has already order in our restaurant
         else if (isFirstOrder.ToLower() == "n"){
             Console.WriteLine("What is your phone number ?");
             string phoneNumber = Console.ReadLine();
