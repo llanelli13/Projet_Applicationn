@@ -13,16 +13,16 @@ class Drink
         this.Name = drinkName;
         switch (drinkName)
         {
-            case drinkName.Water:
+            case DrinkName.Water:
                 Price = 0.70;
                 break;
-            case drinkName.Coca:
+            case DrinkName.Coca:
                 Price = 1.00;
                 break;
-            case drinkName.IceTea:
+            case DrinkName.IceTea:
                 Price = 1.00;
                 break;
-            case drinkName.Fanta:
+            case DrinkName.Fanta:
                 Price = 1.00;
                 break;
         }
