@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 class Clerk {
     public string Name { get; set; }
     public List<Customer> customers { get; private set; }
@@ -56,14 +55,14 @@ class Clerk {
     }
 
     public void MakingOrder(){
-        Console.WriteLine("Je fais la commande");
+        Console.WriteLine("I do the order");
         List<object> itemList = new List<object>();
 
-        Console.WriteLine("Quelle type de pizza voulez vous ?");
+        Console.WriteLine("What type of pizza do you want");
         string ans_type = Console.ReadLine();
         itemList.Add(ans_type);
 
-        Console.WriteLine("Très bien, en quelle taille la voulez-vous ?");
+        Console.WriteLine("Ok, what size do you want it ?");
         Console.WriteLine("1. Large");
         Console.WriteLine("2. Medium");
         Console.WriteLine("3. Small");
@@ -83,23 +82,23 @@ class Clerk {
                     itemList.Add(Pizza.Size.Small);
                     break;
                 default:
-                    Console.WriteLine("Choix invalide. La taille sera réglée sur Medium.");
+                    Console.WriteLine("Invalide choice. The size will be medium");
                     itemList.Add(Pizza.Size.Medium);
                     break;
             }
         }
 
-        Console.WriteLine("Voulez-vous une boisson avec ceci ?");
-        Console.WriteLine("1. Oui");
-        Console.WriteLine("2. Non");
+        Console.WriteLine("Do you want a drink?");
+        Console.WriteLine("1. Yes");
+        Console.WriteLine("2. No");
 
         int drinkChoice;
         if (int.TryParse(Console.ReadLine(), out drinkChoice))
         {
             if (drinkChoice == 1)
             {
-                Console.WriteLine("Choisissez une boisson :");
-                Console.WriteLine("1. Eau");
+                Console.WriteLine("Choose a drink:");
+                Console.WriteLine("1. Water");
                 Console.WriteLine("2. Coca");
                 Console.WriteLine("3. Ice Tea");
                 Console.WriteLine("4. Fanta");
@@ -122,12 +121,17 @@ class Clerk {
                             itemList.Add(new Drink(Drink.DrinkName.Fanta));
                             break;
                         default:
-                            Console.WriteLine("Boisson invalide. Aucune boisson ajoutée.");
+                            Console.WriteLine("Invalid drink, no drink add");
                             break;
                     }
                 }
             }
         }
+        foreach (var item in itemList)
+        {
+            Console.WriteLine(item);
+        }
+
     }
 
     public void AddCustomer(Customer customer){

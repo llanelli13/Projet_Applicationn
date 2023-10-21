@@ -18,3 +18,17 @@ C:\Users\Pierre\Desktop\Projet_Application\obj\Debug\net7.0\ref\Projet_Applicati
 C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.dll
 C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\refint\Projet_Application.dll
 C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.pdb
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.csproj.AssemblyReference.cache
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.AssemblyInfoInputs.cache
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.AssemblyInfo.cs
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.csproj.CoreCompileInputs.cache
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\bin\Debug\net7.0\Projet_Application.exe
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\bin\Debug\net7.0\Projet_Application.deps.json
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\bin\Debug\net7.0\Projet_Application.runtimeconfig.json
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\bin\Debug\net7.0\Projet_Application.dll
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\bin\Debug\net7.0\Projet_Application.pdb
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.csproj.CopyComplete
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.genruntimeconfig.cache
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\ref\Projet_Application.dll
