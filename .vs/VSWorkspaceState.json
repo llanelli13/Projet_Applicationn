@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\obj\\Release\\net7.0"
   ],
-  "SelectedNode": "\\C:\\Users\\Vexus\\Desktop\\Efrei\\S7\\Projet cs",
+  "SelectedNode": "\\Projet_Application.csproj",
   "PreviewInSolutionExplorer": false
 }

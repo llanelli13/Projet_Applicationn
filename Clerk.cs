@@ -57,6 +57,77 @@ class Clerk {
 
     public void MakingOrder(){
         Console.WriteLine("Je fais la commande");
+        List<object> itemList = new List<object>();
+
+        Console.WriteLine("Quelle type de pizza voulez vous ?");
+        string ans_type = Console.ReadLine();
+        itemList.Add(ans_type);
+
+        Console.WriteLine("Très bien, en quelle taille la voulez-vous ?");
+        Console.WriteLine("1. Large");
+        Console.WriteLine("2. Medium");
+        Console.WriteLine("3. Small");
+
+        int choice;
+        if (int.TryParse(Console.ReadLine(), out choice))
+        {
+            switch (choice)
+            {
+                case 1:
+                    itemList.Add(Pizza.Size.Large);
+                    break;
+                case 2:
+                    itemList.Add(Pizza.Size.Medium);
+                    break;
+                case 3:
+                    itemList.Add(Pizza.Size.Small);
+                    break;
+                default:
+                    Console.WriteLine("Choix invalide. La taille sera réglée sur Medium.");
+                    itemList.Add(Pizza.Size.Medium);
+                    break;
+            }
+        }
+
+        Console.WriteLine("Voulez-vous une boisson avec ceci ?");
+        Console.WriteLine("1. Oui");
+        Console.WriteLine("2. Non");
+
+        int drinkChoice;
+        if (int.TryParse(Console.ReadLine(), out drinkChoice))
+        {
+            if (drinkChoice == 1)
+            {
+                Console.WriteLine("Choisissez une boisson :");
+                Console.WriteLine("1. Eau");
+                Console.WriteLine("2. Coca");
+                Console.WriteLine("3. Ice Tea");
+                Console.WriteLine("4. Fanta");
+
+                int drinkSelection;
+                if (int.TryParse(Console.ReadLine(), out drinkSelection))
+                {
+                    switch (drinkSelection)
+                    {
+                        case 1:
+                            itemList.Add(new Drink(Drink.DrinkName.Water));
+                            break;
+                        case 2:
+                            itemList.Add(new Drink(Drink.DrinkName.Coca));
+                            break;
+                        case 3:
+                            itemList.Add(new Drink(Drink.DrinkName.IceTea));
+                            break;
+                        case 4:
+                            itemList.Add(new Drink(Drink.DrinkName.Fanta));
+                            break;
+                        default:
+                            Console.WriteLine("Boisson invalide. Aucune boisson ajoutée.");
+                            break;
+                    }
+                }
+            }
+        }
     }
 
     public void AddCustomer(Customer customer){

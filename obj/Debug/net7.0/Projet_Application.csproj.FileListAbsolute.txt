@@ -15,3 +15,6 @@ C:\Users\Pierre\Desktop\Projet_Application\obj\Debug\net7.0\refint\Projet_Applic
 C:\Users\Pierre\Desktop\Projet_Application\obj\Debug\net7.0\Projet_Application.pdb
 C:\Users\Pierre\Desktop\Projet_Application\obj\Debug\net7.0\Projet_Application.genruntimeconfig.cache
 C:\Users\Pierre\Desktop\Projet_Application\obj\Debug\net7.0\ref\Projet_Application.dll
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.dll
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\refint\Projet_Application.dll
+C:\Users\Vexus\Desktop\Efrei\S7\Projet cs\obj\Debug\net7.0\Projet_Application.pdb
